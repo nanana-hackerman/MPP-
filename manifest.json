@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+
+  "name": "MPP+",
+  "description": "Extends functionality of multiplayerpiano.com",
+  "version": "0.1",
+
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "*://*.multiplayerpiano.com/*",
+    "http://*/*",
+    "https://*/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.multiplayerpiano.com/*"],
+      "js": ["hooker.js"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["mppp_bg.js"]
+  },
+
+  "web_accessible_resources": [
+    "script_modified.js",
+    "hooker.js",
+    "mppp.js"
+  ]
+}
