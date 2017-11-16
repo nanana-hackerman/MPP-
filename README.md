@@ -11,6 +11,7 @@ You get a button that insults you in spanish
 * Automatic fishing without staying on test/fishing
 * Custom scripts (automatic save and load snippets)
 * Hiding cursor per user
+* Automatic spam muting
 * Cursor vanity (following/circling/jerking)
 * Piano vanity (auto octaves, bombing, etc)
 
